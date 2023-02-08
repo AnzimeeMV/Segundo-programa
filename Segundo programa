@@ -1,0 +1,24 @@
+>>> edad = int(input("Por favor ingrese su edad: "))
+Por favor ingrese su edad:
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: ''
+>>> while edad > 110 or edad < 0:
+...     print("Ha cometido un error en la digitacion de su edad, se le volvera pedir que digite su edad hasta que lo haga correctamente.\n")
+...     edad = int(input("Por favor ingrese su edad: "))
+...     continue
+... else:
+...     if edad >= 0 and edad <= 6:
+...         print(f"Tu edad es {edad}, y te encuentras en la categoria de 'Infancia'.")
+...     else:
+...         if edad >= 7 and edad <= 12:
+...             print(f"Tu edad es {edad}, y te encuentras en la categoria de 'Niñez'.")
+...         else:
+...             if edad >= 13 and edad <= 20:
+...                 print(f"Tu edad es {edad}, y te encuentras en la categoria de 'Adolescencia'.")
+...             else:
+...                 if edad >= 26 and edad <= 60:
+...                     print(f"Tu edad es {edad}, y te encuentras en la cetegoria de 'Adultez'.")
+...                 else:
+...                     if edad > 60:
+...                         print(f"Tu edad es {edad}, y te encuentras en la cetegoria de 'Ancianidad'.")
